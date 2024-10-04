@@ -1,0 +1,86 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Albert B Benson">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" type = "text/css" href = "bootstrap.css">
+    <title>Albert B Benson contact</title>
+    <script src="bootstrap.bundle.min.js"></script>
+
+</head>
+<body>
+    <div class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">☰</a>
+            <div class="collapse navbar-collapse" id="navbarColor01">
+                <ul class="navbar-nav me-auto">
+                  <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="cv.html">Resume</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="hobbies.html">Hobbies</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="#">Contact
+                      <span class="visually-hidden">(current)</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+        </div>
+    </div>
+
+<div class="main">
+    <form action="http://localhost:8080/contact" method="post">
+        <div>
+            <label for="exampleInputName1" class="form-label mt-4">Name</label>
+            <input type="text" class="form-control" id="exampleInputName1" aria-describedby="NameHelp" placeholder="Enter name">
+        </div>
+        <div>
+            <label for="exampleInputAge1" class="form-label mt-4">Name</label>
+            <input type="number" class="form-control" id="exampleInputAge1" aria-describedby="AgeHelp" placeholder="Enter Age">
+        </div>
+        <div>
+            <label for="exampleInputEmail1" class="form-label mt-4">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+        </div>
+        <div>
+            <label for="exampleTextarea" class="form-label mt-4">Message</label>
+            <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
+        </div>
+        <fieldset>
+            <legend class="mt-4">How Did you find about my page?</legend>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="google">
+              <label class="form-check-label" for="google">
+                Google
+              </label> 
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="friend">
+                <label class="form-check-label" for="friend">
+                  From a friend
+                </label> 
+            </div> 
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="LinkedIn">
+                <label class="form-check-label" for="LinkedIn">
+                  From LinkedIn
+                </label> 
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="other">
+                <label class="form-check-label" for="other">
+                  Other
+                </label> 
+            </div>
+        </fieldset>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>
+
+</body>
+</html>
